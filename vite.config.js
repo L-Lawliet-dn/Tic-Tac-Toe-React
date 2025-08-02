@@ -11,6 +11,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'Tic-Tac-Toe-React', // 👈 VERY IMPORTANT
+  base: '/Tic-Tac-Toe-React/', // 👈 VERY IMPORTANT
   plugins: [react()],
 })
