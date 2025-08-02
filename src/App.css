@@ -1,0 +1,61 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Game container */
+.status {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+/* Square button */
+.square {
+  background-color: #fff;
+  border: 2px solid #999;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border-radius: 8px;
+}
+
+.square:hover {
+  background-color: #e6f7ff;
+  transform: scale(1.05);
+}
+
+.square:focus {
+  outline: none;
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 500px) {
+  .square {
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+  }
+
+  .status {
+    font-size: 1.2rem;
+  }
+}
